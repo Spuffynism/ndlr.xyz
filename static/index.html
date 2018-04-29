@@ -1,11 +1,71 @@
 <html>
 <head>
   <title>N</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,600i" rel="stylesheet">
+  <style>
+    body {
+        background-color: #efe7e3;
+        color: #ea9c93;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 30px;
+    }
+
+    a {
+        color: black;
+        font-style: italic;
+    }
+
+    p {
+        width: fit-content;
+        padding: 1em;
+    }
+
+    ::selection {
+        background-color: #ea9c93;
+        color: #efe7e3;
+    }
+
+    ::-moz-selection {
+        background-color: #ea9c93;
+        color: #efe7e3;
+    }
+  </style>
 </head>
 <body>
-  <p>Find me <a href="https://twitter.com/MmmShrimps">here</a>, or anywhere else on the internet.<br/><br/>
+  <p>Find me here, or anywhere else on the internet.<br/><br/>
   My repos are <a href="https://github.com/Spuffynism">here</a>.<br/>
   My gists are <a href="https://gist.github.com/Spuffynism">here</a>.<br/>
   My tweets are <a href="https://twitter.com/MmmShrimps">here</a>.</p>
 </body>
+<script>
+  let links = Array.from(document.getElementsByTagName('a'));
+  let paragraph = document.getElementsByTagName('p')[0];
+
+  let switchColor = (event, toColor) => {
+      event.target.style.color = toColor;
+
+      let bodyStyle = window.getComputedStyle(document.body, null);
+      let paragraphStyle = window.getComputedStyle(paragraph, null);
+
+      [paragraph.style.color, document.body.style.backgroundColor] = 
+        [bodyStyle.backgroundColor, paragraphStyle.color];
+  }
+
+  let flip = (event) => {
+      switchColor(event, 'white');
+  };
+
+  let unflip = (event) => {
+      switchColor(event, 'black');
+  };
+
+  let addEventListener = (link) => {
+      link.addEventListener('mouseover', flip, false);
+      link.addEventListener('mouseout', unflip, false)
+  };
+
+  links.map(addEventListener);
+</script>
 </html>
