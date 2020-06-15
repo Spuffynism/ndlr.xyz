@@ -1,70 +1,65 @@
-<html>
+<html lang="en">
 <head>
-  <title>N</title>
+  <title>nico</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,600i" rel="stylesheet">
   <style>
     body {
-        background-color: #efe7e3;
-        color: #ea9c93;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 30px;
+      background-color: #efe7e3;
+      color: #ea9c93;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 30px;
     }
 
     a {
-        color: black;
-        font-style: italic;
+      color: black;
+      font-style: italic;
     }
 
     p {
-        width: fit-content;
-        padding: 1em;
+      width: fit-content;
+      padding: 1em;
     }
 
     ::selection {
-        background-color: #ea9c93;
-        color: #efe7e3;
+      background-color: #ea9c93;
+      color: #efe7e3;
     }
 
     ::-moz-selection {
-        background-color: #ea9c93;
-        color: #efe7e3;
+      background-color: #ea9c93;
+      color: #efe7e3;
     }
   </style>
 </head>
 <body>
-  <p>Find me here, or anywhere else on the internet.<br/><br/>
+<p>Find me here, or anywhere else on the internet.<br/><br/>
   My repos are <a href="https://github.com/Spuffynism">here</a>.<br/>
   My gists are <a href="https://gist.github.com/Spuffynism">here</a>.<br/>
-  My tweets are <a href="https://twitter.com/MmmShrimps">here</a>.</p>
+  My linkedin is <a href="https://www.linkedin.com/in/nlabarre/">here</a>.<br><br>
+  I can be reached at nico@[this-domain-name].</p>
 </body>
 <script>
-  let links = Array.from(document.getElementsByTagName('a'));
-  let paragraph = document.getElementsByTagName('p')[0];
+  var links = Array.from(document.getElementsByTagName('a'));
+  var paragraph = document.getElementsByTagName('p')[0];
 
-  let switchColor = (event, toColor) => {
+  function switchColor(toColor) {
+    return function (event) {
       event.target.style.color = toColor;
 
-      let bodyStyle = window.getComputedStyle(document.body, null);
-      let paragraphStyle = window.getComputedStyle(paragraph, null);
+      var bodyColor = window.getComputedStyle(document.body, null).backgroundColor;
+      var paragraphColor = window.getComputedStyle(paragraph, null).color;
 
-      [paragraph.style.color, document.body.style.backgroundColor] = 
-        [bodyStyle.backgroundColor, paragraphStyle.color];
+      paragraph.style.color = bodyColor;
+      document.body.style.backgroundColor = paragraphColor;
+    }
   }
 
-  let flip = (event) => {
-      switchColor(event, 'white');
-  };
-
-  let unflip = (event) => {
-      switchColor(event, 'black');
-  };
-
-  let addEventListener = (link) => {
-      link.addEventListener('mouseover', flip, false);
-      link.addEventListener('mouseout', unflip, false)
-  };
+  function addEventListener(link) {
+    link.addEventListener('mouseover', switchColor('white'), false);
+    link.addEventListener('mouseout', switchColor('black'), false)
+  }
 
   links.map(addEventListener);
 </script>
