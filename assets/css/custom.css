@@ -25,3 +25,7 @@
 header nav a {
     vertical-align: middle;
 }
+
+.footer-info {
+    padding: unset;
+}
