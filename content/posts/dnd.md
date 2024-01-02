@@ -7,7 +7,7 @@ draft: false
 
 #### Bringing back the magic of Christmas using the magic of Prolog
 
-As part of a holiday D&D one-shot session where Santa Claus's toy factory had been sabotaged, our dungeon master presented to us, a group of Christmas elves, a riddle to solve.
+As part of a holiday D&D one-shot session where Santa Claus' toy factory had been sabotaged, our dungeon master presented to us, a group of Christmas elves, a riddle to solve.
 
 9 cards, labeled with the names of Santa's reindeer were presented to us. The instructions indicated that we had to find the order reindeer were in, according to this riddle:
 
