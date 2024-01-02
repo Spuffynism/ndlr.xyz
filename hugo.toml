@@ -2,9 +2,8 @@ baseURL = "https://spuffynism.github.io/ndlr.xyz/"
 languageCode = "en-us"
 title = "nico"
 theme="archie"
-pygmentsstyle = "monokai"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
+markup.highlight.style = 'github'
+
 
 [params]
     mode = "light"
