@@ -7,7 +7,7 @@ draft: false
 
 ###### Have a moment to talk about our lord and savior [Moneyball (2011)](https://boxd.it/1AU56H)?
 
-A few months ago, [I was playing with Prolog](https://gist.github.com/Spuffynism/446c7c2d498477491d8137e8f234d4a9) which got me thinking about possible applications for constraint solvers. Prolog offers a straightforward syntax to express constraints. This led me to explore constraint solving techniques in the context of maximizing points from players for a hockey pool.
+A few months ago, [I was playing with Prolog](../dnd) which got me thinking about possible applications for constraint solvers. Prolog offers a straightforward syntax to express constraints. This led me to explore constraint solving techniques in the context of maximizing points from players for a hockey pool.
 
 With a score of 2502, the strategy detailed here would rank us in position #74 out of 16,733 of [La Presse's 2022-2023 hockey pool](https://poolhockey.lapresse.ca/index.php) (no affiliation!), ranking around the 99.56th percentile. Not too bad!
 
