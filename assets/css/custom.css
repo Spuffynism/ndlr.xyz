@@ -1,0 +1,27 @@
+:root {
+    --maincolor: #baf346;
+}
+
+.site-description {
+    display: revert;
+}
+
+.drawing {
+    vertical-align: middle;
+    border: none;
+    height: 50px;
+}
+
+.drawing:hover {
+    animation: im-gonna-get-dizzy 1s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes im-gonna-get-dizzy {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+header nav a {
+    vertical-align: middle;
+}

@@ -1,0 +1,35 @@
+baseURL = "https://spuffynism.github.io/ndlr.xyz/"
+languageCode = "en-us"
+title = "nico"
+theme="archie"
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+[params]
+    mode = "light"
+    useCDN = false
+    subtitle = "# Hi! I'm Nico. I'm a Senior Software Engineer @ Coveo."
+    favicon = "favicon.ico"
+    me = "/me-if-i-was-a-transparent-drawing.png"
+    customcss = ["css/custom.css"]
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "GitHub"
+url = "https://github.com/Spuffynism"
+weight = 2
+
+[[menu.main]]
+name = "Twitter"
+url = "https://twitter.com/ndlabarre/"
+weight = 3
+
+[[menu.main]]
+name = "LinkedIn"
+url = "https://linkedin.com/in/nlabarre"
+weight = 4
