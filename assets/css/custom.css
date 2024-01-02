@@ -41,3 +41,11 @@ code {
 code::before {
     display: none;
 }
+
+.highlight pre ::selection {
+    background: var(--maincolor);
+}
+
+::selection {
+    color: unset;
+}
