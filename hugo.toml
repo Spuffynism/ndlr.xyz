@@ -1,13 +1,12 @@
 baseURL = "https://spuffynism.github.io/ndlr.xyz/"
 languageCode = "en-us"
 title = "nico"
-theme="archie"
-markup.highlight.style = 'github'
-
+theme = "archie"
+markup.highlight.style = "github"
 
 [params]
     mode = "light"
-    useCDN = false
+    useCDN = true
     subtitle = "# Hi! I'm Nico. I'm a Senior Software Engineer @ Coveo."
     favicon = "favicon.ico"
     me = "/me-if-i-was-a-transparent-drawing.png"
