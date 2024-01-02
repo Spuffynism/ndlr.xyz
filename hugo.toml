@@ -1,4 +1,4 @@
-baseURL = "https://spuffynism.github.io/ndlr.xyz/"
+baseURL = "ndlr.xyz/"
 languageCode = "en-us"
 title = "nico"
 theme = "archie"
