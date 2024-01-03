@@ -217,3 +217,7 @@ Dancer = 9,
 ```
 
 In the first solution, we defined transitivity of the `is_behind` rule using the `follows` rule. In this solution, we equate reindeer to numbers and rely on the transitivity of comparison operators to arrive at the solution! We didn't even need to write an algorithm to solve the riddle, we only needed to declare the riddle constraints, and then let Prolog find a sequence that fits within said constraints!
+
+---
+
+[Hacker News submission](https://news.ycombinator.com/item?id=34224456)
